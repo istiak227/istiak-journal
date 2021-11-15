@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = "Istiak Ahmed";
+export const siteTitle = "Istiak's journal";
 
 export default function Layout({ children, home }) {
   return (
@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/istiak.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -40,23 +40,12 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+          <i>By</i>
+            <h1 className={utilStyles.headingXl}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+            </h1>
           </>
         )}
       </header>
@@ -69,5 +58,5 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
-  )
+  );
 }
