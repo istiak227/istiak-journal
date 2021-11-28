@@ -12,16 +12,14 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
+        <meta name="description" content="Everyday journal of Istiak Ahmed" />
+        {/* <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
             siteTitle
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
+        /> */}
+        <meta property="og:image" content="/images/istiak.jpg" />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
@@ -40,7 +38,7 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-          <i>By</i>
+            <i>By</i>
             <h1 className={utilStyles.headingXl}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
