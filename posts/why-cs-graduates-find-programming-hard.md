@@ -1,6 +1,6 @@
 ---
 title: 'Why CS Graduates find Programming hard?'
-date: '2020-11-15'
+date: '2021-11-15'
 ---
 
 This is often a common scenario of Bangladesh that a CS/IT graduate from any of the reputed/not reputed universities finds programming difficult. They know what data structure is, how a computer works, how machine interprets programming language to machine language to bite code, but they are often scared to print ‘Hello World’ into the console.
